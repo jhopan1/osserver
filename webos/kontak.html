@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Jhofany</title>
+  <link rel="stylesheet" href="contact-style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#">M.Jhofan<span>.</span></a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="social-buttons">
+      <a href="https://www.facebook.com/jhofannPakey" class="social-button facebook"><i class="icon"></i><span>Facebook</span></a>
+      <a href="https://instagram.com/zjfny_" class="social-button instagram"><i class="icon"></i><span>Instagram</span></a>
+      <a href="https://www.linkedin.com/in/jhofany-yuana-5647312a4/" class="social-button linkedin"><i class="icon"></i><span>LinkedIn</span></a>
+    </div>
+  </section>
+
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
+</body>
+</html>

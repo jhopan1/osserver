@@ -1,0 +1,85 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Rest of your existing header styles... */
+  
+  /* Contact section styles */
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Social buttons styles */
+  .social-buttons {
+    display: flex;
+  }
+  
+  .social-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-button i {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  
+  /* Facebook button styles */
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .facebook:hover {
+    background-color: #365492;
+  }
+  
+  /* Twitter button styles */
+  .twitter {
+    background-color: #00acee;
+  }
+  
+  .twitter:hover {
+    background-color: #0099cc;
+  }
+  
+  /* Instagram button styles */
+  .instagram {
+    background-color: #e4405f;
+  }
+  
+  .instagram:hover {
+    background-color: #d82b4f;
+  }
+  
+  /* LinkedIn button styles */
+  .linkedin {
+    background-color: #0077b5;
+  }
+  
+  .linkedin:hover {
+    background-color: #006699;
+  }
+  

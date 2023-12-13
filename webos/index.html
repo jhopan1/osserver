@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Jhofany</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">M.Jhofan<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Company Profile </h2>
+        <h3>Meyzel Jhofany Yuana</h3>
+        <p>
+          Hi, I'm Jhofany, I'm a programmer and I master several programming languages Lua, html, css, js, python, php
+        </p>
+
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <div class="card">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">HTML & CSS</div>
+      </div>
+      <div class="card js">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">PHP</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">Lua</div>
+      </div>
+    </div>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+
+      let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.82,
+        fill: {gradient: ['#a445b2', '#fa4299']}
+      }
+      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function (event, progress, stepValue) {
+          $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+      $(".js .bar").circleProgress({
+        value: 0.65
+      });
+      $(".react .bar").circleProgress({
+        value: 0.88
+      });
+    </script>
+
+  </body>
+</html>
