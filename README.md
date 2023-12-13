@@ -1,3 +1,5 @@
+menggunakan ubuntu 22.04.3
+
 service service yang di install
 - ssh
 $sudo apt install openssh-server
